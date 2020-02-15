@@ -3,7 +3,8 @@ A customisation to Bootstrap Carousel which updates a whole page background imag
 
 You can use CDN for the repo:
 
-<script src="https://cdn.jsdelivr.net/gh/whitewaterdesign/bootstrap-carousel-bkg/bcb.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/whitewaterdesign/bootstrap-carousel-bkg/bcb-script.js"></script> 
+
 
 Needs bootstrap, popper and jQuery.
 
