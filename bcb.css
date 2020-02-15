@@ -1,1 +1,23 @@
-
+body {
+    color:#fff;
+    min-height:100vh;
+    background-color:$dbrown;
+}
+.container {
+		overflow-y: auto;
+}
+.bgslide {
+		width:100vw;
+		height:100vh;
+		position:fixed;
+		z-index: -1;
+		background-size:cover;
+		opacity:0;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+}
+.bgslide.active {
+    opacity:1;
+}
