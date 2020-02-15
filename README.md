@@ -1,6 +1,10 @@
 # bootstrap-carousel-bkg
 A customisation to Bootstrap Carousel which updates a whole page background image on automatic play using jQuery
 
+You can use CDN for the repo:
+
+<script src="https://cdn.jsdelivr.net/gh/whitewaterdesign/bootstrap-carousel-bkg/bcb.js"></script> 
+
 Needs bootstrap, popper and jQuery.
 
 From bootstrap:
