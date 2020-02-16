@@ -18,6 +18,9 @@ body {
 	-o-transition: opacity 1s ease-in-out;
 	transition: opacity 1s ease-in-out;
 }
+.bgslide-0 {
+	background-image:url('https://images.pexels.com/photos/235852/pexels-photo-235852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
 .bgslide.active {
 	opacity:1;
 }
