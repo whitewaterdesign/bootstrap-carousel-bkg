@@ -31,8 +31,8 @@ $( document ).ready(function() {
     });
     // Launch carousel with a 4 sec gap between slides
     $('#homepageCarousel').carousel({
-		pause: false,
-		ride: "carousel",
-		interval: 4000
+	pause: false,
+	ride: "carousel",
+	interval: 4000
 	});
 });
