@@ -17,9 +17,9 @@ $( document ).ready(function() {
     // create a div behind the previous div with bkg image of last slide
     $('#bgslide-0').before('<div id="bgslide-bkg" class="bgslide active" style="background-image:url(' + bkg_img + ')"></div>'); 
     
-    /* #homepageCarousel is main carousel, when carousel slide.bs.carousel event is triggered, adds a new slide slide div 
+    /* #bcb-carousel is main carousel, when carousel slide.bs.carousel event is triggered, adds a new slide slide div 
     behind previous two with active class set and removes active class from topmost background div - css transition causes it to fade out*/
-    $('#homepageCarousel').on('slide.bs.carousel', function (event) {
+    $('#bcb-carousel').on('slide.bs.carousel', function (event) {
         console.log('#bgslide-' + event.from);
         $('#bgslide-' + event.from).before(elements[event.to]);
         $('#bgslide-' + event.from).removeClass('active');
