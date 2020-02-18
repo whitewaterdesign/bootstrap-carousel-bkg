@@ -30,7 +30,7 @@ $( document ).ready(function() {
         }, 1200); // sets the amount of time in milliseconds to wait before 
     });
     // Launch carousel with a 4 sec gap between slides
-    $('#homepageCarousel').carousel({
+    $('#bcb-carousel').carousel({
 	pause: false,
 	ride: "carousel",
 	interval: 4000
