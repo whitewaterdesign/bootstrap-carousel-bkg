@@ -12,9 +12,9 @@ $( document ).ready(function() {
         elements.push(div); // pushes div to the end of the elements array 
     });
     
-    // add a div to the top of the body element
-    $('body').prepend('<div id="bgslide-0" class="bgslide active"></div>'); 
-    // create a div behind the previous div with 
+    // add a div to the top of the body element with bkg image of first slide
+    $('body').prepend('<div id="bgslide-0" class="bgslide active" style="background-image:url(' + $(".carousel-inner .carousel-item:first-child").attr("js_image") + ')"></div>'); 
+    // create a div behind the previous div with bkg image of last slide
     $('#bgslide-0').before('<div id="bgslide-bkg" class="bgslide active" style="background-image:url(' + bkg_img + ')"></div>'); 
     
     /* #homepageCarousel is main carousel, when carousel slide.bs.carousel event is triggered, adds a new slide slide div 
@@ -28,5 +28,11 @@ $( document ).ready(function() {
         setTimeout(function() {
             $('#bgslide-' + event.from).remove();
         }, 1200); // sets the amount of time in milliseconds to wait before 
-    })
+    });
+    // Launch carousel with a 4 sec gap between slides
+    $('#homepageCarousel').carousel({
+		pause: false,
+		ride: "carousel",
+		interval: 4000
+	});
 });
